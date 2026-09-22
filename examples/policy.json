@@ -1,0 +1,10 @@
+{
+  "fields": {
+    "name": {"action": "hmac", "length": 16},
+    "email": {"action": "hmac", "length": 20},
+    "phone": {"action": "mask", "visible": 3},
+    "age": {"action": "generalize_number", "bucket": 10},
+    "notes": {"action": "redact"},
+    "city": {"action": "keep"}
+  }
+}
